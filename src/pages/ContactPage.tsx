@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { motion } from "framer-motion"
-import { MapPin, Phone, Mail, Clock, Send } from "lucide-react"
+import { MapPin, Clock, Send } from "lucide-react"
 import { useState } from "react"
 
 export const ContactPage = () => {
@@ -82,119 +82,25 @@ export const ContactPage = () => {
                 <p className="text-muted-foreground">Kisaasi, Uganda</p>
               </div>
             </div>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-muted-foreground mb-4">
               Visit our modern, fully-equipped dental clinic in the heart of Kisaasi.
             </p>
-          </motion.div>
-
-          <motion.div variants={itemVariants} className="bg-card rounded-2xl p-8 border border-border">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
-                <Phone className="w-6 h-6 text-primary" />
-              </div>
-              <div>
-                <h3 className="text-foreground font-semibold">Phone</h3>
-                <p className="text-muted-foreground">+256 XXX XXX XXX</p>
-              </div>
+            <div className="w-full h-48 rounded-lg overflow-hidden border border-border">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7354154218024!2d32.59845568885497!3d0.36936180000000307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbb07d12fe20d%3A0x2e5ff9a965ba823f!2sFrontier%20Dental%20Clinic!5e0!3m2!1sen!2sug!4v1765701217275!5m2!1sen!2sug"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Frontier Dental Clinic Location"
+              />
             </div>
-            <p className="text-sm text-muted-foreground">
-              Call us to schedule your appointment or ask any questions about our services.
-            </p>
           </motion.div>
 
-          <motion.div variants={itemVariants} className="bg-card rounded-2xl p-8 border border-border">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
-                <Mail className="w-6 h-6 text-primary" />
-              </div>
-              <div>
-                <h3 className="text-foreground font-semibold">Email</h3>
-                <p className="text-muted-foreground">info@frontierdentalclinic.ug</p>
-              </div>
-            </div>
-            <p className="text-sm text-muted-foreground">
-              Email us with your inquiries and we'll respond within 24 hours.
-            </p>
-          </motion.div>
-        </motion.div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.3 }}>
-            <h2 className="text-foreground mb-8">Send us a Message</h2>
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-foreground font-medium mb-2">
-                  Full Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 bg-card border border-border rounded-lg text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-                  placeholder="Your name"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="email" className="block text-foreground font-medium mb-2">
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 bg-card border border-border rounded-lg text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-                  placeholder="your@email.com"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="phone" className="block text-foreground font-medium mb-2">
-                  Phone Number
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 bg-card border border-border rounded-lg text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-                  placeholder="+256 XXX XXX XXX"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="message" className="block text-foreground font-medium mb-2">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  rows={5}
-                  className="w-full px-4 py-3 bg-card border border-border rounded-lg text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary resize-none"
-                  placeholder="Tell us about your dental concerns or appointment request..."
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="w-full bg-primary text-primary-foreground py-3 rounded-lg font-semibold hover:bg-primary/90 transition-all duration-200 flex items-center justify-center gap-2"
-              >
-                <Send className="w-4 h-4" />
-                {submitted ? "Message Sent!" : "Send Message"}
-              </button>
-            </form>
-          </motion.div>
+          
 
           {/* Clinic Info */}
           <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.3 }}>
@@ -234,13 +140,13 @@ export const ContactPage = () => {
                   <li>✓ Affordable pricing without compromising quality</li>
                   <li>✓ Experienced and compassionate dental team</li>
                   <li>✓ Modern equipment and techniques</li>
-                  <li>✓ Flexible payment plans available</li>
+                  
                   <li>✓ Transparent pricing structure</li>
                 </ul>
               </div>
             </div>
           </motion.div>
-        </div>
+        </motion.div>
       </div>
     </section>
   )

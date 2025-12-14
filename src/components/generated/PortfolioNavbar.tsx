@@ -67,12 +67,9 @@ export const PortfolioNavbar = ({ currentPage = "home", setCurrentPage }: Portfo
           <div className="flex-shrink-0">
             <button
               onClick={() => handleLinkClick("home")}
-              className="text-2xl font-bold text-foreground hover:text-primary transition-colors duration-200"
-              style={{
-                fontFamily: "Plus Jakarta Sans, sans-serif",
-              }}
+              className="flex items-center hover:opacity-90 transition-opacity duration-200"
             >
-              <span>Frontier Dental</span>
+              <img src="/images/logo.png" alt="Frontier Dental Clinic" className="h-12 w-auto" />
             </button>
           </div>
 

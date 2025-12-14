@@ -6,11 +6,14 @@
 
 :root {
   --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  /* Updated foreground to deep charcoal (gray-800 equivalent) for better readability */
+  --foreground: oklch(0.28 0.013 265);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
+  /* Updated card-foreground to match new foreground color */
+  --card-foreground: oklch(0.28 0.013 265);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
+  /* Updated popover-foreground to match new foreground color */
+  --popover-foreground: oklch(0.28 0.013 265);
   /* Updated primary to Deep Nebra Indigo #5B4BFF */
   --primary: oklch(0.55 0.25 275);
   --primary-foreground: oklch(1 0 0);
@@ -33,7 +36,8 @@
   --chart-5: oklch(0.769 0.188 70.08);
   --radius: 0.625rem;
   --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
+  /* Updated sidebar-foreground to match new foreground color */
+  --sidebar-foreground: oklch(0.28 0.013 265);
   /* Updated sidebar primary to match new primary color */
   --sidebar-primary: oklch(0.55 0.25 275);
   --sidebar-primary-foreground: oklch(1 0 0);
@@ -83,10 +87,9 @@
 }
 
 @theme inline {
-  --font-sans: "Plus Jakarta Sans", "Plus Jakarta Sans Fallback";
+  --font-sans: "Inter", "Inter Fallback"; /* Updated to Inter for cleaner, more professional appearance */
   --font-mono: "Geist Mono", "Geist Mono Fallback";
-  /* Added Plus Jakarta Sans for headings */
-  --font-serif: "Plus Jakarta Sans", "Plus Jakarta Sans Fallback";
+  --font-serif: "Inter", "Inter Fallback"; /* Updated serif to Inter */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);

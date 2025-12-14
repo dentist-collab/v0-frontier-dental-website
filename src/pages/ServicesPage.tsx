@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion"
 import { Smile, Sparkles, Zap, Shield, Heart, Wrench } from "lucide-react"
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "../../components/ui/table"
+import { MobilePricingList } from "../components/MobilePricingList"
 
 export const ServicesPage = () => {
   const services = [
@@ -41,6 +43,20 @@ export const ServicesPage = () => {
       icon: Heart,
       color: "bg-pink-100 text-pink-600",
     },
+  ]
+
+  const pricingData = [
+    { category: "Diagnostics", service: "Consultation", price: "50,000", notes: "Per appointment" },
+    { category: "Restorative", service: "Extractions", price: "50,000", notes: "Per unit" },
+    { category: "Restorative", service: "Cementation (Filling)", price: "100,000 - 150,000", notes: "Per tooth" },
+    { category: "Hygiene", service: "Scaling and Polishing", price: "150,000", notes: "Per tooth" },
+    { category: "Prosthetics", service: "Replacement (Removable Dentures)", price: "150,000", notes: "per tooth" },
+    { category: "Surgical", service: "Surgical Extraction", price: "250,000", notes: "Per procedure" },
+    { category: "Cosmetic", service: "Teeth Whitening by Veneers", price: "500,000", notes: "Price per Veneer" },
+    { category: "Prosthetics", service: "Crowns per tooth", price: "800,000", notes: "Per tooth" },
+    { category: "Prosthetics", service: "PMF Bridge", price: "800,000", notes: "Price per Unit" },
+    { category: "Restorative", service: "Root Canal Treatment + Crown", price: "950,000", notes: "Price per tooth" },
+    { category: "Prosthetics", service: "Zirconia Crown", price: "1,000,000", notes: "Per tooth" },
   ]
 
   const containerVariants = {
@@ -98,6 +114,49 @@ export const ServicesPage = () => {
               </motion.div>
             )
           })}
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
+          className="mt-20"
+        >
+          <div className="text-center mb-12">
+            <h2 className="text-foreground mb-4">Transparent Pricing</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              We believe in honest, upfront pricing. Below are our standard service rates with no hidden fees.
+            </p>
+          </div>
+
+          {/* Mobile Pricing List - visible on small screens */}
+          <div className="md:hidden">
+            <MobilePricingList />
+          </div>
+
+          {/* Desktop Table - visible on medium screens and up */}
+          <div className="hidden md:block bg-card rounded-2xl border border-border overflow-hidden shadow-sm">
+            <Table>
+              <TableHeader>
+                <TableRow className="bg-primary/10 hover:bg-primary/10">
+                  <TableHead className="font-bold text-foreground">Service Category</TableHead>
+                  <TableHead className="font-bold text-foreground">Service Name</TableHead>
+                  <TableHead className="font-bold text-foreground">Price (UGX)</TableHead>
+                  <TableHead className="font-bold text-foreground">Notes / Per Unit</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                {pricingData.map((item, index) => (
+                  <TableRow key={index} className="hover:bg-muted/50 transition-colors">
+                    <TableCell className="font-medium">{item.category}</TableCell>
+                    <TableCell>{item.service}</TableCell>
+                    <TableCell className="font-semibold text-primary">{item.price}</TableCell>
+                    <TableCell className="text-muted-foreground">{item.notes}</TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </div>
         </motion.div>
 
         <motion.div

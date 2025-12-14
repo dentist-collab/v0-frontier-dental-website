@@ -28,13 +28,7 @@ const galleryItems: GalleryItem[] = [
     category: "Staff Portraits",
     description: "Our experienced dentist dedicated to providing quality dental care",
   },
-  {
-    id: "3",
-    image: "/images/img-3315.jpeg",
-    title: "Dr. Rosemary at Work",
-    category: "Staff Portraits",
-    description: "Our dentist committed to excellence in every patient interaction",
-  },
+  
   {
     id: "4",
     image: "/images/img-3312.jpeg",
@@ -112,7 +106,7 @@ export const GalleryPage = () => {
                 <img
                   src={item.image || "/placeholder.svg"}
                   alt={item.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
               </div>
               <div className="p-4">

@@ -3,12 +3,12 @@ import type { Metadata } from "next"
 
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
-import { Plus_Jakarta_Sans, Geist_Mono } from "next/font/google"
+import { Inter, Geist_Mono } from "next/font/google"
 
 // Initialize fonts
-const _plusJakartaSans = Plus_Jakarta_Sans({
+const _inter = Inter({
   subsets: ["latin"],
-  weight: ["200", "300", "400", "500", "600", "700", "800"],
+  weight: ["300", "400", "500", "600", "700"],
 })
 const _geistMono = Geist_Mono({
   subsets: ["latin"],
@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans antialiased`}>
+      <body className={`font-sans antialiased ${_inter.className}`}>
         {children}
         <Analytics />
       </body>

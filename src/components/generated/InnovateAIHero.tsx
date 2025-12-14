@@ -142,7 +142,7 @@ export const InnovateAIHero: React.FC = () => {
                   <Heart className="mt-1 size-5 text-accent" />
                   <div className="flex-1 space-y-1">
                     <p className="text-base text-foreground">Consultation</p>
-                    <p className="text-sm text-muted-foreground">Free of Charge</p>
+                    <p className="text-sm text-muted-foreground">50,000</p>
                   </div>
                 </motion.div>
               </div>
