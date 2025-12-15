@@ -52,11 +52,11 @@ export const ServicesPage = () => {
     { category: "Hygiene", service: "Scaling and Polishing", price: "150,000", notes: "Per tooth" },
     { category: "Prosthetics", service: "Replacement (Removable Dentures)", price: "150,000", notes: "per tooth" },
     { category: "Surgical", service: "Surgical Extraction", price: "250,000", notes: "Per procedure" },
-    { category: "Cosmetic", service: "Teeth Whitening by Veneers", price: "500,000", notes: "Price per Veneer" },
     { category: "Prosthetics", service: "Crowns per tooth", price: "800,000", notes: "Per tooth" },
     { category: "Prosthetics", service: "PMF Bridge", price: "800,000", notes: "Price per Unit" },
     { category: "Restorative", service: "Root Canal Treatment + Crown", price: "950,000", notes: "Price per tooth" },
     { category: "Prosthetics", service: "Zirconia Crown", price: "1,000,000", notes: "Per tooth" },
+    { category: "Cosmetic", service: "Teeth Whitening by Veneers", price: "2,000,000", notes: "Price per Veneer" },
   ]
 
   const containerVariants = {

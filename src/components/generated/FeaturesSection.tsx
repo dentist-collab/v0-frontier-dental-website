@@ -3,7 +3,7 @@
 import type React from "react"
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { Brain, Heart, Sparkles, Moon, ChevronRight } from "lucide-react"
+import { Brain, Heart, Sparkles, Moon, LucideArrowDownAZ as LucideArrowDownAzIcon } from "lucide-react"
 
 type FeatureSectionProps = {
   className?: string
@@ -19,33 +19,33 @@ const features: Feature[] = [
   {
     id: 1,
     icon: <Brain className="w-7 h-7" />,
-    title: "Intentional Focus",
+    title: "Intelligent Treatment Planning",
     description:
-      "Choose what matters most each day. Nebra helps you set clear intentions and stay aligned with your priorities, not just your to-do list.",
+      "We use careful diagnostics and clear patient input to plan the most effective, safest, and most affordable route to your desired smile. We focus on results that last.",
     image: "/images/brain-icon.png",
   },
   {
     id: 2,
     icon: <Heart className="w-7 h-7" />,
-    title: "Energy Management",
+    title: "Patient-Centered Care & Comfort",
     description:
-      "Plan your work around your natural rhythms. Schedule deep work when you're most focused, and rest when you need it most.",
+      "Your well-being is our priority. Our team is trained to deliver compassionate care, minimizing pain and anxiety throughout every check-up and procedure.",
     image: "/images/heart-icon.png",
   },
   {
     id: 3,
     icon: <Sparkles className="w-7 h-7" />,
-    title: "Mindful Transitions",
+    title: "Transparent Pricing & Process",
     description:
-      "Gentle reminders help you shift between tasks with awareness. Take intentional breaks and maintain focus without burnout.",
+      "Know your costs upfront. We provide clear, itemized quotes in UGX and walk you through every step of your treatment so there are zero surprises.",
     image: "/images/activity-icon.png",
   },
   {
     id: 4,
     icon: <Moon className="w-7 h-7" />,
-    title: "Daily Reflection",
+    title: "Restorative & Lasting Results",
     description:
-      "End each day with gratitude and insight. Track your progress, celebrate wins, and learn from your patterns.",
+      "We aim to give you long-term oral health so you can smile confidently every morning. Our quality materials and work ensure minimal follow-up hassle.",
     image: "/images/moon-icon.png",
   },
 ]
@@ -68,17 +68,17 @@ export const FeaturesSection = ({ className = "" }: FeatureSectionProps) => {
       <div className="w-full max-w-7xl mx-auto flex flex-col gap-12">
         <div className="w-full max-w-2xl flex flex-col items-start gap-6">
           <div className="inline-flex items-center justify-center gap-2.5 px-2.5 py-1 bg-[#F7F7F5] rounded-full">
-            <span className="text-sm font-normal text-[#17100D]">How It Works</span>
+            <span className="text-sm font-normal text-[#17100D]">How We Work</span>
           </div>
 
           <div className="flex flex-col gap-4">
             <h2 className="text-black leading-tight tracking-tight">
-              Work in rhythm with <br />
-              your life
+              The Frontier Dental <br />
+              Difference
             </h2>
 
             <p className="text-xl font-normal text-[#898683] leading-relaxed tracking-tight max-w-[800px]">
-              Frontier Dental adapts  with your budget, helping you find balance between productivity and peace.
+              Frontier Dental adapts with your budget, helping you find balance between productivity and peace.
             </p>
           </div>
 
@@ -88,7 +88,7 @@ export const FeaturesSection = ({ className = "" }: FeatureSectionProps) => {
             className="inline-flex items-center gap-1 px-4 py-1.5 rounded-full hover:bg-gray-100 transition-colors group"
           >
             <span className="text-[17px] font-medium text-black tracking-[-0.01em]">Explore Features</span>
-            <ChevronRight className="w-4 h-4 text-black group-hover:translate-x-0.5 transition-transform" />
+            <LucideArrowDownAzIcon className="w-4 h-4 text-black group-hover:translate-x-0.5 transition-transform" />
           </a>
         </div>
 

@@ -16,7 +16,7 @@ const faqData = [
     id: "how-it-works",
     question: "How much does a standard consultation or routine cleaning cost?",
     answer:
-      "All consultations are at no-cost.",
+      "All consultations are at only UGX 50,000.",
   },
   {
     id: "who-for",
@@ -30,30 +30,7 @@ const faqData = [
     answer:
       "While the ideal is every six months, for budget-conscious patients, we recommend visiting at least once per year for a check-up and professional cleaning. This helps us spot small, inexpensive problems before they become big, costly emergencies..",
   },
-  { 
-    id: "mobile",
-    question: "Is there a mobile app?",
-    answer:
-      "Yes! Nebra is available on iOS, Android, and web. Your intentions, reflections, and progress sync seamlessly across all devices so you can stay mindful wherever you are.",
-  },
-  {
-    id: "data-privacy",
-    question: "How is my data protected?",
-    answer:
-      "Your privacy is sacred to us. All data is encrypted end-to-end, stored securely, and never shared with third parties. You own your data and can export or delete it anytime.",
-  },
-  {
-    id: "integrations",
-    question: "Does Nebra integrate with other tools?",
-    answer:
-      "Yes, Nebra integrates with popular tools like Google Calendar, Notion, and Slack. We believe in working with your existing workflow, not replacing it entirely.",
-  },
- {
-    id: "support",
-    question: "What kind of support do you offer?",
-    answer:
-      "We provide email support for all users, with priority support for Mindful and Teams plans. We also have a comprehensive help center, video tutorials, and a community forum for peer support.",
-  }, 
+   
 ] as any[]
 
 // @component: FAQSection
