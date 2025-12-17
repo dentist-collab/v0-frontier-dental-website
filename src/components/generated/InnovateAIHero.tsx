@@ -120,7 +120,7 @@ export const InnovateAIHero: React.FC = () => {
                   <div className="mt-1 size-5 rounded-full border-2 border-primary/40" />
                   <div className="flex-1 space-y-1">
                     <p className="text-base text-foreground">Comprehensive Teeth Whitening</p>
-                    <p className="text-sm text-muted-foreground">UGX 200,000</p>
+                    <p className="text-sm text-muted-foreground">UGX 50,000</p>
                   </div>
                 </motion.div>
 
