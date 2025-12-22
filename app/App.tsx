@@ -69,10 +69,12 @@ function App() {
 
     // Home page (default)
   // Home page (default)
+   const siteName = "Frontier Dental Clinic Uganda";
+   
   return (
     <>
       <PortfolioNavbar currentPage={currentPage} setCurrentPage={setCurrentPage} />
-      <InnovateAIHero />
+      <InnovateAIHero siteName={siteName} />
       <PhilosophySection />
       <FeaturesGrid />
       <FeaturesSection />
