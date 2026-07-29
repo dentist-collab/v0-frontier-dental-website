@@ -1,16 +1,80 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- Added Google Fonts link for Plus Jakarta Sans -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>InnovateAI Hero Section</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Page Title & Favicon -->
+  <title>Frontier Dental Clinic | Affordable Dentists in Kisaasi, Kampala</title>
+  <link rel="icon" type="image/png" href="/logo.png" />
+  <link rel="apple-touch-icon" href="/logo.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Basic SEO -->
+  <meta name="description"
+    content="Top-rated dental clinic in Kisaasi, Kampala. Offering professional teeth whitening (UGX 50,000), root canals (UGX 450,000), consultations, and restorative care." />
+  <meta name="keywords"
+    content="dentist in Kampala, dental clinic Kisaasi, teeth whitening Uganda, root canal cost Kampala, Frontier Dental Clinic" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- OpenGraph (Facebook & WhatsApp Previews) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://frontierdentaluganda.com/" />
+  <meta property="og:title" content="Frontier Dental Clinic | Quality & Affordable Dental Care in Kampala" />
+  <meta property="og:description"
+    content="Accessible dental excellence in Kisaasi, Uganda. Root canals, teeth whitening, consultations, and emergency services." />
+  <meta property="og:image" content="https://frontierdentaluganda.com/logo.png" />
+  <meta property="article:publisher"
+    content="https://www.facebook.com/p/Frontier-Dental-clinic-Kampala-100092444318048/" />
+
+  <!-- Structured Data (Local Business Schema for Google Search) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Frontier Dental Clinic",
+      "url": "https://frontierdentaluganda.com",
+      "logo": "https://frontierdentaluganda.com/logo.png",
+      "image": "https://frontierdentaluganda.com/logo.png",
+      "telephone": "+256706884113",
+      "email": "info@frontierdentaluganda.com",
+      "sameAs": [
+        "https://www.facebook.com/p/Frontier-Dental-clinic-Kampala-100092444318048/"
+      ],
+      "priceRange": "UGX 50,000 - UGX 450,000",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Kisaasi",
+        "addressLocality": "Kampala",
+        "addressCountry": "UG"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "14:00"
+        }
+      ]
+    }
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
 </html>
