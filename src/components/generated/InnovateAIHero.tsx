@@ -8,14 +8,14 @@ import { ArrowRight, CheckCircle2, Heart, Sparkles } from "lucide-react"
 export const InnovateAIHero: React.FC = () => {
   // @return
   return (
-    <section aria-label="InnovateAI Hero" className="relative w-full overflow-hidden bg-background text-foreground">
+    <section aria-label="Frontier Dental Clinic Hero" className="relative w-full overflow-hidden bg-background text-foreground">
       <div className="relative mx-auto max-w-7xl px-6 py-24">
         <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
           {/* Copy */}
           <div className="space-y-6">
             <div className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-[calc(var(--text-sm))] shadow-sm">
               <span className="inline-flex size-2 rounded-full bg-primary"></span>
-              <span className="text-muted-foreground">Quality Dental Care</span>
+              <span className="text-muted-foreground">Professional Dental Care</span>
             </div>
 
             <motion.h1
@@ -32,7 +32,7 @@ export const InnovateAIHero: React.FC = () => {
               }}
               className="text-balance tracking-tight"
             >
-              Achieve a Healthy Smile, Without the High Cost
+              Affordable & Quality Dental Care in Kisaasi, Kampala
             </motion.h1>
 
             <motion.p
@@ -50,8 +50,7 @@ export const InnovateAIHero: React.FC = () => {
               }}
               className="max-w-prose text-xl text-muted-foreground leading-relaxed"
             >
-              We make dental excellence accessible. Our commitment is to provide top-tier services—from root canals to
-              deep alignment—at transparent, affordable prices, ensuring your health is prioritized.
+              Welcome to Frontier Dental Clinic in Kisaasi. We provide comprehensive dental services from professional cleanings and root canals to teeth whitening—all at transparent, affordable prices. Your smile deserves expert care.
             </motion.p>
 
             <motion.div
@@ -72,9 +71,9 @@ export const InnovateAIHero: React.FC = () => {
               <a
                 href="#request-demo"
                 className="inline-flex items-center justify-center rounded-lg bg-primary px-5 py-3 text-primary-foreground shadow-md hover:shadow-lg transition-shadow focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                aria-label="Get started with Frontier Dental"
+                aria-label="Book an appointment with Frontier Dental"
               >
-                Start Your Journey
+                Book Your Appointment
                 <ArrowRight className="ml-2 size-4" aria-hidden="true" />
               </a>
               <div className="flex items-center gap-3 text-muted-foreground">
@@ -106,9 +105,9 @@ export const InnovateAIHero: React.FC = () => {
               <div className="mb-8 space-y-2">
                 <div className="flex items-center gap-2">
                   <div className="size-2 rounded-full bg-primary/60" />
-                  <span className="text-sm text-muted-foreground">Today's Intentions</span>
+                  <span className="text-sm text-muted-foreground">Transparent Pricing</span>
                 </div>
-                <h3 className="text-2xl font-normal text-foreground">Our Most Popular Affordable Services</h3>
+                <h2 className="text-2xl font-normal text-foreground">Our Most Popular Affordable Services</h2>
               </div>
 
               {/* Intention Cards */}
@@ -150,7 +149,7 @@ export const InnovateAIHero: React.FC = () => {
               {/* Energy Indicator */}
               <div className="rounded-xl bg-muted/30 p-4 space-y-3">
                 <div className="flex items-center justify-between">
-                  <span className="text-sm text-muted-foreground">Patience Satisfaction Score</span>
+                  <span className="text-sm text-muted-foreground">Patient Satisfaction Rating</span>
                   <Sparkles className="size-4 text-primary" />
                 </div>
                 <div className="flex gap-1.5">
@@ -189,11 +188,7 @@ export const InnovateAIHero: React.FC = () => {
 
         {/* Logos/Trust (optional subtle) */}
         <div className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-4 opacity-80">
-          <span className="text-[calc(var(--text-xs))] text-muted-foreground">Trusted by millions of Ugandans</span>
-          <div className="h-4 w-16 rounded bg-muted" />
-          <div className="h-4 w-20 rounded bg-muted" />
-          <div className="h-4 w-14 rounded bg-muted" />
-          <div className="h-4 w-24 rounded bg-muted" />
+          <span className="text-[calc(var(--text-xs))] text-muted-foreground">Trusted by patients in Kisaasi and throughout Kampala</span>
         </div>
       </div>
     </section>
