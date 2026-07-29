@@ -16,9 +16,9 @@ const _geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Frontier Dental Clinic | Affordable Dentist in Kisaasi, Kampala",
+  title: "Frontier Dental Clinic Uganda | Affordable Dentist in Kisaasi, Kampala",
   description:
-    "Top-rated dental clinic in Kisaasi, Kampala. Offering professional teeth whitening (UGX 50,000), root canals (UGX 450,000), consultations, and restorative care.",
+    "Frontier Dental Clinic Uganda - Top-rated dental clinic in Kisaasi, Kampala. Offering professional teeth whitening (UGX 50,000), root canals (UGX 450,000), consultations, and restorative care.",
   keywords: [
     "dentist in Kampala",
     "dental clinic Kisaasi",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   ],
   canonical: "https://frontierdentaluganda.com",
   openGraph: {
-    title: "Frontier Dental Clinic | Quality & Affordable Dental Care in Kampala",
+    title: "Frontier Dental Clinic Uganda | Quality & Affordable Dental Care in Kampala",
     description:
       "Accessible dental excellence in Kisaasi, Uganda. Root canals, teeth whitening, consultations, and emergency dental services.",
     url: "https://frontierdentaluganda.com",
